@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="shortUrlApp">
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js'></script>
+  <script src='js/app.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ <header>
+     <h1>Url Shortner</h1>
+    <h3>free code camp project</h3>
+    </header>   
+    <section ng-controller='shortAppCtrl'>
+        <!-- {{urlToShorten}} -->
+        <input placeholder="Enter Url" ng-model='urlToShorten'>
+        <a ng-href="/new/{{urlToShorten}}">Get Short Url</a>
+    </section>
+ 
+</body>
+</html>
